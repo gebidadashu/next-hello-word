@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 字体回退配置 */
+:root {
+  --font-lusitana-fallback: Georgia, "Times New Roman", serif;
+}
+
+/* 确保 Lusitana 字体有回退 */
+.font-lusitana {
+  font-family: var(--font-lusitana), var(--font-lusitana-fallback);
+}
+
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
